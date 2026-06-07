@@ -1,0 +1,77 @@
+{
+  "name": "@homotechsual/docusaurus-plugin-faqs",
+  "version": "1.0.0",
+  "description": "A Docusaurus plugin that builds a categorised FAQ page from local YAML files",
+  "type": "module",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./lib/index.d.ts",
+      "import": "./lib/index.js",
+      "default": "./lib/index.js"
+    }
+  },
+  "files": [
+    "lib/**/*.js",
+    "lib/**/*.js.map",
+    "lib/**/*.d.ts",
+    "lib/**/*.d.ts.map",
+    "lib/**/*.css"
+  ],
+  "scripts": {
+    "build": "tsc && copyfiles -u 1 \"src/**/*.css\" lib",
+    "watch": "tsc --watch",
+    "lint": "eslint src",
+    "format": "prettier --write 'src/**/*.{ts,tsx}'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/homotechsual/docusaurus-plugin-faqs.git"
+  },
+  "keywords": [
+    "docusaurus",
+    "docusaurus-plugin",
+    "faq",
+    "faqs"
+  ],
+  "author": "Mikey O'Toole <mikey@homotechsual.dev>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/homotechsual/docusaurus-plugin-faqs/issues"
+  },
+  "homepage": "https://github.com/homotechsual/docusaurus-plugin-faqs#readme",
+  "peerDependencies": {
+    "@docusaurus/core": ">=3.0.0 <5.0.0",
+    "react": "*",
+    "react-dom": "*"
+  },
+  "dependencies": {
+    "@docusaurus/utils-validation": "^3.10.1",
+    "js-yaml": "^4.2.0",
+    "marked": "^18.0.5"
+  },
+  "devDependencies": {
+    "@docusaurus/core": "^3.10.1",
+    "@docusaurus/module-type-aliases": "^3.10.1",
+    "@docusaurus/theme-classic": "^3.10.1",
+    "@docusaurus/types": "^3.10.1",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.19.20",
+    "@types/react": "^19.2.17",
+    "copyfiles": "^2.4.1",
+    "eslint": "^10.4.1",
+    "eslint-config-prettier": "^10.1.8",
+    "globals": "^17.6.0",
+    "prettier": "^3.8.3",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "typescript": "^6.0.3",
+    "typescript-eslint": "^8.60.1"
+  },
+  "packageManager": "yarn@4.16.0",
+  "publishConfig": {
+    "access": "public"
+  }
+}

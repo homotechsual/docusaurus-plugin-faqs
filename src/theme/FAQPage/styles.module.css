@@ -1,0 +1,97 @@
+.main {
+  padding: 2rem 0 4rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section {
+  margin-bottom: 2.5rem;
+}
+
+.categoryHeading {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--ifm-color-primary);
+}
+
+.item {
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: var(--ifm-global-radius);
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  scroll-margin-top: calc(var(--ifm-navbar-height) + 1rem);
+}
+
+.questionRow {
+  display: flex;
+  align-items: center;
+}
+
+.questionRow:hover .anchor,
+.anchor:focus-visible {
+  opacity: 1;
+}
+
+.question {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 1.1rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ifm-font-color-base);
+  transition: background-color 0.15s ease;
+}
+
+.question:hover {
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.icon {
+  flex-shrink: 0;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1;
+  color: var(--ifm-color-primary);
+}
+
+.anchor {
+  flex-shrink: 0;
+  margin-right: 0.9rem;
+  padding: 0.25rem 0.4rem;
+  border-radius: var(--ifm-global-radius);
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  color: var(--ifm-color-primary);
+  opacity: 0;
+  transition: opacity 0.15s ease;
+}
+
+.anchor:hover {
+  text-decoration: none;
+  background-color: var(--ifm-color-emphasis-100);
+}
+
+.answer {
+  padding: 0.9rem 1.1rem;
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+  background-color: var(--ifm-background-surface-color);
+}
+
+.answer > :last-child {
+  margin-bottom: 0;
+}

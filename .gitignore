@@ -1,0 +1,12 @@
+# Compiled output
+lib/
+
+# Dependency directories
+node_modules/
+
+# Yarn 4
+.yarn/install-state.gz
+
+# Optional caches
+.npm
+.eslintcache
