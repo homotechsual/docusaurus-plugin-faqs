@@ -1,0 +1,7 @@
+question: What happens if I omit the category field?
+category: Writing FAQs
+order: 4
+answer: |
+  Entries without a `category` are grouped under a heading labelled **General** and sorted after all named categories. If every entry on the page is uncategorised the heading is omitted entirely — only one section appears with no heading.
+
+  See [Writing FAQ Entries](/docs/writing-faqs) for details on sorting behaviour.

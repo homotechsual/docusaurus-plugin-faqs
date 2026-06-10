@@ -1,0 +1,10 @@
+question: My FAQ file is being skipped — why?
+category: Troubleshooting
+order: 1
+answer: |
+  Two things cause a file to be skipped, both logged as warnings at build time:
+
+  1. **Parse error** — the file is not valid YAML. Check for indentation mistakes, unquoted special characters, or a missing `|` on a multi-line answer.
+  2. **Missing required fields** — every entry must have a string `question` and a string `answer`. If either is absent or the wrong type the entry is skipped.
+
+  See [Writing FAQ Entries](/docs/writing-faqs) for the correct file format and field reference.

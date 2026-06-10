@@ -1,0 +1,7 @@
+question: How do direct links work?
+category: Features
+order: 1
+answer: |
+  Every FAQ entry is assigned a stable slug derived from the question text (e.g. "How do I reset my password?" → `how-do-i-reset-my-password`). A `#` permalink appears next to each question on hover.
+
+  Visiting the page with a matching URL fragment (e.g. `/faqs#how-do-i-reset-my-password`) automatically expands that entry and scrolls it into view. See [Direct Links](/docs/direct-links) for the full slugification rules and how duplicate slugs are handled.

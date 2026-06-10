@@ -1,0 +1,8 @@
+question: The FAQ page is empty but my YAML files exist
+category: Troubleshooting
+order: 3
+answer: |
+  The plugin is probably looking in the wrong directory. Check two things:
+
+  1. **`path` option** — the default is `data/faqs` relative to your site directory. If your files are elsewhere, set `path` in the plugin config. See [Configuration](/docs/configuration).
+  2. **File extensions** — only `.yaml` and `.yml` files are read. Files with other extensions (`.yml.bak`, `.txt`) are silently ignored.

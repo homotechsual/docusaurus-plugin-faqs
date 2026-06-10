@@ -1,0 +1,11 @@
+question: All my questions appear under "General" — what's wrong?
+category: Troubleshooting
+order: 2
+answer: |
+  This happens when the `category` field is missing or not a string. Common causes:
+
+  - The field is named `categories` (plural) instead of `category`
+  - The value is a number or list rather than a plain string
+  - The field is indented under `answer` by mistake
+
+  Check each file against the format in [Writing FAQ Entries](/docs/writing-faqs).

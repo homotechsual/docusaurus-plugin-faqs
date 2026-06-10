@@ -1,0 +1,13 @@
+question: How do I group questions into categories?
+category: Writing FAQs
+order: 2
+answer: |
+  Add a `category` field to your YAML file:
+
+  ```yaml
+  question: How do I reset my password?
+  answer: Visit the sign-in page and select *Forgot password*.
+  category: Account Management
+  ```
+
+  Questions sharing the same `category` value are grouped under a heading. Categories are sorted alphabetically. See [Writing FAQ Entries](/docs/writing-faqs) for sorting details.

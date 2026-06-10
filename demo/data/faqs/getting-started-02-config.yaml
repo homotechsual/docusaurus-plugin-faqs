@@ -1,0 +1,17 @@
+question: How do I add the plugin to my Docusaurus config?
+category: Getting Started
+order: 2
+answer: |
+  Add it to the `plugins` array in `docusaurus.config.ts`:
+
+  ```ts
+  import faqsPlugin from '@homotechsual/docusaurus-plugin-faqs'
+
+  export default {
+    plugins: [
+      [faqsPlugin, { routeBasePath: 'faqs' }],
+    ],
+  }
+  ```
+
+  See [Introduction](/docs/intro) for the full TypeScript and JavaScript examples, or [Configuration](/docs/configuration) for all available options.

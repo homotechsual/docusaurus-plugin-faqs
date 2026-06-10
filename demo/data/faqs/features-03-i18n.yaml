@@ -1,0 +1,7 @@
+question: Does the plugin work with Docusaurus i18n?
+category: Features
+order: 3
+answer: |
+  Yes. When building a non-default locale, the plugin looks for FAQ files in `i18n/<locale>/docusaurus-plugin-faqs/`. If that directory exists it is used in place of the configured `path`; otherwise the default-locale files are used as a fallback.
+
+  See [Internationalisation](/docs/internationalisation) for step-by-step setup instructions.

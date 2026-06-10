@@ -1,0 +1,13 @@
+question: How do I install the plugin?
+category: Getting Started
+order: 1
+answer: |
+  Install the package from npm:
+
+  ```bash
+  npm install @homotechsual/docusaurus-plugin-faqs
+  # or
+  yarn add @homotechsual/docusaurus-plugin-faqs
+  ```
+
+  See [Introduction](/docs/intro) for the full quick-start guide including the minimal Docusaurus config.

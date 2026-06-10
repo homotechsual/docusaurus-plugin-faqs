@@ -1,0 +1,12 @@
+question: What fields does a FAQ entry support?
+category: Writing FAQs
+order: 1
+answer: |
+  Each YAML file supports four fields:
+
+  - **`question`** *(required)* — the question text, rendered as plain text
+  - **`answer`** *(required)* — the answer, rendered as Markdown
+  - **`category`** *(optional)* — groups questions under a heading; defaults to **General**
+  - **`order`** *(optional)* — controls sort order within a category; lower numbers appear first
+
+  See [Writing FAQ Entries](/docs/writing-faqs) for the full field reference and a complete example file.

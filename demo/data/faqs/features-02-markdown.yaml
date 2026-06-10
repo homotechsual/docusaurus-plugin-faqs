@@ -1,0 +1,7 @@
+question: What Markdown is supported in answers?
+category: Features
+order: 2
+answer: |
+  Answers are parsed with [marked](https://github.com/markedjs/marked), which implements the CommonMark spec. All standard Markdown is supported: **bold**, *italic*, `inline code`, links, lists, blockquotes, and fenced code blocks.
+
+  HTML is rendered as-is if you include it. Docusaurus MDX features (admonitions, React components) are not available — plain Markdown only.

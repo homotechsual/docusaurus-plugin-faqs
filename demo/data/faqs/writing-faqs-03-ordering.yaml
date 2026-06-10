@@ -1,0 +1,14 @@
+question: How do I control the order of entries within a category?
+category: Writing FAQs
+order: 3
+answer: |
+  Add an `order` field (a number). Lower numbers appear first:
+
+  ```yaml
+  question: First question in the category
+  answer: ...
+  category: My Category
+  order: 1
+  ```
+
+  Entries without an explicit `order` come after all ordered entries and are sorted alphabetically by question. See [Writing FAQ Entries](/docs/writing-faqs) for the full sorting rules.
