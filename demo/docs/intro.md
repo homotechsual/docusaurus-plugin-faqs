@@ -1,0 +1,63 @@
+---
+sidebar_position: 1
+---
+
+# Introduction
+
+**FAQs for Docusaurus** builds a categorised, collapsible FAQ page from a directory of local YAML files. Add the plugin, write some YAML, and you get a fully generated page at the URL of your choosing — no React, no MDX, no database.
+
+## Installation
+
+```bash
+npm install @homotechsual/docusaurus-plugin-faqs
+# or
+yarn add @homotechsual/docusaurus-plugin-faqs
+```
+
+## Quick start
+
+Add the plugin to your `docusaurus.config.ts`:
+
+```ts
+import faqsPlugin from '@homotechsual/docusaurus-plugin-faqs'
+import type { PluginOptions as FAQOptions } from '@homotechsual/docusaurus-plugin-faqs'
+
+export default {
+  plugins: [
+    [
+      faqsPlugin,
+      {
+        path: 'data/faqs',
+        routeBasePath: 'faqs',
+      } satisfies FAQOptions,
+    ],
+  ],
+}
+```
+
+Or in `docusaurus.config.js`:
+
+```js
+export default {
+  plugins: [
+    [
+      '@homotechsual/docusaurus-plugin-faqs',
+      {
+        path: 'data/faqs',
+        routeBasePath: 'faqs',
+      },
+    ],
+  ],
+}
+```
+
+Then create `data/faqs/my-first-faq.yaml` in your site directory:
+
+```yaml
+question: What does this plugin do?
+answer: It builds a categorised FAQ page from local YAML files.
+category: General
+order: 1
+```
+
+Run `docusaurus build` (or `docusaurus start`) and visit `/faqs`.
