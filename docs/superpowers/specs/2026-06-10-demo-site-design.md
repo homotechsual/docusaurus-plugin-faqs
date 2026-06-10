@@ -104,26 +104,26 @@ Content migrated and expanded from the current README:
 
 Generated entirely by the plugin from YAML files in `demo/data/faqs/`. No custom React page — this IS the demonstration. Four categories of meta FAQs about the plugin itself, with answers that link back to the relevant docs pages where appropriate.
 
-**Getting Started**
+#### Getting Started
 
 - How do I install the plugin?
 - How do I add it to my Docusaurus config?
 - Where do I put my FAQ files?
 
-**Writing FAQs**
+#### Writing FAQs
 
 - What fields does a FAQ entry support?
 - How do I group questions into categories?
 - How do I control the order of entries within a category?
 - What happens if I omit `category`?
 
-**Features**
+#### Features
 
 - How do direct links work?
 - What Markdown is supported in answers?
 - Does the plugin work with Docusaurus i18n?
 
-**Troubleshooting**
+#### Troubleshooting
 
 - My FAQ file is being skipped — why?
 - All my questions appear under "General" — what's wrong?
@@ -187,7 +187,7 @@ Adapted directly from `docusaurus-plugin-plausible`'s `deploy-demo.yml`:
 
 **Cloudflare Pages config:**
 
-- Project name: `docusaurus-plugin-faqs`
+- Project name: `docusaurus-faqs`
 - Build output: `demo/build`
 - Production URL: `faqs.docusaurus.homotechsual.dev`
 - Secrets required: `CLOUDFLARE_ACCOUNT_ID`, `CLOUDFLARE_API_TOKEN`
