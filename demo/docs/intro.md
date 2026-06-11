@@ -2,6 +2,10 @@
 sidebar_position: 1
 ---
 
+[![NPM Version](https://img.shields.io/npm/v/%40homotechsual%2Fdocusaurus-plugin-faqs?style=for-the-badge)](https://www.npmjs.com/package/@homotechsual/docusaurus-plugin-faqs)
+[![NPM Last Update](https://img.shields.io/npm/last-update/%40homotechsual%2Fdocusaurus-plugin-faqs?style=for-the-badge)](https://www.npmjs.com/package/@homotechsual/docusaurus-plugin-faqs)
+[![NPM Downloads](https://img.shields.io/npm/dy/%40homotechsual%2Fdocusaurus-plugin-faqs?style=for-the-badge)](https://www.npmjs.com/package/@homotechsual/docusaurus-plugin-faqs)
+
 # Introduction
 
 **FAQs for Docusaurus** builds a categorised, collapsible FAQ page from a directory of local YAML files. Add the plugin, write some YAML, and you get a fully generated page at the URL of your choosing — no React, no MDX, no database.
