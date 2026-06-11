@@ -28,5 +28,5 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - CI workflow for linting and build validation
 - Publish workflow for npm and GitHub Package Registry
 
-[1.0.1]: https://github.com/homotechsual/docusaurus-plugin-faqs/compare/v1.0.0...v1.0.1
-[1.0.0]: https://github.com/homotechsual/docusaurus-plugin-faqs/releases/tag/v1.0.0
+[1.0.1]: https://github.com/homotechsual/docusaurus-plugin-faqs/compare/1.0.0...1.0.1
+[1.0.0]: https://github.com/homotechsual/docusaurus-plugin-faqs/releases/tag/1.0.0
