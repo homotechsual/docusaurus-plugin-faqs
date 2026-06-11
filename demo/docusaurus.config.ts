@@ -56,7 +56,7 @@ const config: Config = {
         },
         { to: 'https://docs.homotechsual.dev/',
           label: 'Other Projects',
-          position: 'left'
+          position: 'right',
         },
         {
           href: 'https://github.com/homotechsual/docusaurus-plugin-faqs',
