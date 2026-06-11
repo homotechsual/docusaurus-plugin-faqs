@@ -1,6 +1,6 @@
 {
   "name": "@homotechsual/docusaurus-plugin-faqs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Docusaurus plugin that builds a categorised FAQ page from local YAML files",
   "type": "module",
   "main": "lib/index.js",
