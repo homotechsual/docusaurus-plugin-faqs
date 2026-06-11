@@ -54,6 +54,10 @@ const config: Config = {
           label: 'FAQ Demo',
           position: 'left',
         },
+        { to: 'https://docs.homotechsual.dev/',
+          label: 'Other Projects',
+          position: 'left'
+        },
         {
           href: 'https://github.com/homotechsual/docusaurus-plugin-faqs',
           label: 'GitHub',
@@ -86,6 +90,7 @@ const config: Config = {
               label: 'npm',
               href: 'https://www.npmjs.com/package/@homotechsual/docusaurus-plugin-faqs',
             },
+            { label: 'Other Projects', href: 'https://docs.homotechsual.dev/' },
           ],
         },
       ],
