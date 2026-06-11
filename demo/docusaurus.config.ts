@@ -2,6 +2,7 @@ import { themes as prismThemes } from 'prism-react-renderer'
 import type { Config } from '@docusaurus/types'
 import type * as Preset from '@docusaurus/preset-classic'
 import { DOCUSAURUS_VERSION } from '@docusaurus/utils'
+import faqsPlugin, { type PluginOptions as FAQOptions } from '@homotechsual/docusaurus-plugin-faqs'
 
 const config: Config = {
   title: 'FAQs for Docusaurus',
@@ -17,11 +18,11 @@ const config: Config = {
   },
   plugins: [
     [
-      '@homotechsual/docusaurus-plugin-faqs',
+      faqsPlugin,
       {
         path: 'data/faqs',
         routeBasePath: 'faqs',
-      },
+      } satisfies FAQOptions,
     ],
   ],
   presets: [

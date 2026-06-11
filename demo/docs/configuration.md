@@ -16,8 +16,7 @@ All options are passed as the second element of the plugin tuple in your `docusa
 ## TypeScript example
 
 ```ts
-import faqsPlugin from '@homotechsual/docusaurus-plugin-faqs'
-import type { PluginOptions as FAQOptions } from '@homotechsual/docusaurus-plugin-faqs'
+import faqsPlugin, { type PluginOptions as FAQOptions } from '@homotechsual/docusaurus-plugin-faqs'
 
 export default {
   plugins: [

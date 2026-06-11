@@ -19,8 +19,7 @@ yarn add @homotechsual/docusaurus-plugin-faqs
 Add the plugin to your `docusaurus.config.ts`:
 
 ```ts
-import faqsPlugin from '@homotechsual/docusaurus-plugin-faqs'
-import type { PluginOptions as FAQOptions } from '@homotechsual/docusaurus-plugin-faqs'
+import faqsPlugin, { type PluginOptions as FAQOptions } from '@homotechsual/docusaurus-plugin-faqs' 
 
 export default {
   plugins: [
