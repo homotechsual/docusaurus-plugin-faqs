@@ -4,6 +4,7 @@ import type * as Preset from '@docusaurus/preset-classic'
 import { DOCUSAURUS_VERSION } from '@docusaurus/utils'
 import faqsPlugin, { type PluginOptions as FAQOptions } from '@homotechsual/docusaurus-plugin-faqs'
 import plausiblePlugin, { type PluginOptions as PlausibleOptions } from '@homotechsual/docusaurus-plugin-plausible'
+import npm2yarn from '@docusaurus/remark-plugin-npm2yarn'
 
 const config: Config = {
   title: 'FAQs for Docusaurus',
@@ -39,6 +40,15 @@ const config: Config = {
       {
         docs: {
           sidebarPath: './sidebars.ts',
+          remarkPlugins: [
+            [
+              npm2yarn,
+              {
+                converters: ['yarn', 'pnpm', 'bun'],
+                sync: true,
+              },
+            ],
+          ],
         },
         blog: false,
         theme: {
