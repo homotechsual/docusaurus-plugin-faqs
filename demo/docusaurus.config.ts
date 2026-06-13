@@ -3,6 +3,7 @@ import type { Config } from '@docusaurus/types'
 import type * as Preset from '@docusaurus/preset-classic'
 import { DOCUSAURUS_VERSION } from '@docusaurus/utils'
 import faqsPlugin, { type PluginOptions as FAQOptions } from '@homotechsual/docusaurus-plugin-faqs'
+import plausiblePlugin, { type PluginOptions as PlausibleOptions } from '@homotechsual/docusaurus-plugin-plausible'
 
 const config: Config = {
   title: 'FAQs for Docusaurus',
@@ -23,6 +24,11 @@ const config: Config = {
         path: 'data/faqs',
         routeBasePath: 'faqs',
       } satisfies FAQOptions,
+      plausiblePlugin,
+      {
+        domain: 'faqs.docusaurus.homotechsual.dev',
+        outboundLinks: true,
+      } satisfies PlausibleOptions,        
     ],
   ],
   presets: [

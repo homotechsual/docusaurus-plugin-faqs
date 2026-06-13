@@ -12,6 +12,7 @@
     "@docusaurus/core": "^3.10.1",
     "@docusaurus/preset-classic": "^3.10.1",
     "@homotechsual/docusaurus-plugin-faqs": "workspace:*",
+    "@homotechsual/docusaurus-plugin-plausible": "^1.1.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7"
   },
