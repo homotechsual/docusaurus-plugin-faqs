@@ -3,6 +3,11 @@
   "compilerOptions": {
     "strict": true,
     "forceConsistentCasingInFileNames": true,
-    "ignoreDeprecations": "6.0"
+    "ignoreDeprecations": "6.0",
+    "baseUrl": ".",
+    "paths": {
+      "@site/*": ["./*"],
+      "@homotechsual/docusaurus-plugin-faqs": ["../lib/index"]
+    }
   }
 }
