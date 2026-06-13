@@ -23,13 +23,15 @@ const config: Config = {
       {
         path: 'data/faqs',
         routeBasePath: 'faqs',
-      } satisfies FAQOptions,
+      } satisfies FAQOptions,        
+    ],
+    [
       plausiblePlugin,
       {
         domain: 'faqs.docusaurus.homotechsual.dev',
         outboundLinks: true,
-      } satisfies PlausibleOptions,        
-    ],
+      } satisfies PlausibleOptions,
+    ]
   ],
   presets: [
     [
