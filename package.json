@@ -1,6 +1,6 @@
 {
   "name": "@homotechsual/docusaurus-plugin-faqs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Docusaurus plugin that builds a categorised FAQ page from local YAML files",
   "type": "module",
   "main": "lib/index.js",
@@ -24,8 +24,7 @@
     "watch": "tsc --watch",
     "lint": "eslint src",
     "format": "prettier --write 'src/**/*.{ts,tsx}'",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "node scripts/postinstall.mjs"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
