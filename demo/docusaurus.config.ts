@@ -10,7 +10,7 @@ import npm2yarn from '@docusaurus/remark-plugin-npm2yarn'
 const config: Config = {
   title: 'FAQs for Docusaurus',
   tagline: 'Build a categorised FAQ page from YAML files',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon.svg',
   url: 'https://faqs.docusaurus.homotechsual.dev',
   baseUrl: '/',
   onBrokenLinks: 'warn',
