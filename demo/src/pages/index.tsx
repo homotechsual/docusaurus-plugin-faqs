@@ -10,22 +10,22 @@ const features = [
   {
     title: 'YAML-driven',
     description:
-      'Write questions and answers in plain YAML — no React, no MDX, no database. One file per entry.',
+      'Store each question and answer in a YAML file. No React, MDX, or database is needed.',
   },
   {
     title: 'Categories & ordering',
     description:
-      'Group questions under headings with the category field. Control the order within each group explicitly with order, or let them sort alphabetically.',
+      'Group questions with the category field. Use order to sort entries within a category, or leave it out to sort by question.',
   },
   {
     title: 'Direct links',
     description:
-      'Every question gets a stable permalink derived from the question text. Visiting the URL automatically expands that entry and scrolls it into view.',
+      'Each question has a link based on its text. Opening the link expands the question and scrolls it into view.',
   },
   {
     title: 'i18n-ready',
     description:
-      'Drop translated YAML files into i18n/<locale>/docusaurus-plugin-faqs/ and the plugin picks them up automatically for non-default locale builds.',
+      'Add translated YAML files under i18n/<locale>/docusaurus-plugin-faqs/ to use them for non-default locale builds.',
   },
 ]
 

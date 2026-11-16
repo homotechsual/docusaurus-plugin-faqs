@@ -4,7 +4,7 @@ sidebar_position: 5
 
 # Internationalisation
 
-The plugin integrates with Docusaurus's built-in i18n system. When building a non-default locale, it looks for translated FAQ files in a locale-specific directory before falling back to the configured `path`.
+The plugin uses Docusaurus's i18n locale when choosing FAQ files. For a non-default locale, it checks a locale-specific directory. If that directory doesn't exist, it uses the configured `path`.
 
 ## Locale directory
 
@@ -47,4 +47,4 @@ The translated FAQ page is served at the locale's URL prefix (e.g. `/fr/faqs`).
 
 ## Partial translations
 
-If the locale directory exists but contains fewer files than the default, only those files are shown. No merging with the default-locale files occurs — the locale directory fully replaces the configured `path` when it exists.
+If the locale directory exists, the plugin uses only the files in that directory. It does not merge them with the default-locale files, even if the locale directory contains fewer entries.

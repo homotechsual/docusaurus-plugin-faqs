@@ -4,14 +4,14 @@ sidebar_position: 4
 
 # Direct Links
 
-Every FAQ entry gets a stable anchor that can be shared as a deep link to that specific question.
+Each FAQ entry has an anchor you can share as a link to that question.
 
 ## How slugs are derived
 
-The plugin converts the `question` text to a URL-safe slug:
+The plugin turns the question text into a URL slug:
 
 1. Convert to lowercase
-2. Strip characters that are not alphanumeric, whitespace, or hyphens
+2. Remove characters other than letters, digits, whitespace, underscores, and hyphens
 3. Trim leading and trailing whitespace
 4. Replace spaces and underscores with hyphens
 5. Collapse runs of hyphens to a single hyphen
@@ -20,12 +20,12 @@ For example: `"How do I reset my password?"` → `how-do-i-reset-my-password`
 
 ## Duplicate slug disambiguation
 
-If two questions produce the same slug, the second gets a `-2` suffix, the third `-3`, and so on. Slugs are assigned in file read order (alphabetical by filename).
+If questions produce the same slug, the plugin adds a suffix: `-2` for the second, `-3` for the third, and so on. It assigns slugs in file read order, which is alphabetical by filename.
 
 ## The permalink icon
 
-Each question row shows a `#` link on hover. Clicking it copies the URL fragment to the browser address bar and adds it to the browser history.
+Hover over a question to see its `#` link. Click the link to update the address bar with that question's URL fragment.
 
 ## Auto-expand on load
 
-When a visitor lands on the FAQ page with a fragment in the URL (e.g. `/faqs#how-do-i-reset-my-password`), the matching entry is automatically expanded and scrolled into view. This also works when navigating between pages within the same Docusaurus site.
+When someone opens a FAQ URL with a fragment, such as `/faqs#how-do-i-reset-my-password`, the matching entry opens and scrolls into view. The same happens when navigating to a fragment from another page on the site.

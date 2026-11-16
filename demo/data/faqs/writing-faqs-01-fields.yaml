@@ -4,9 +4,9 @@ order: 1
 answer: |
   Each YAML file supports four fields:
 
-  - **`question`** *(required)* — the question text, rendered as plain text
-  - **`answer`** *(required)* — the answer, rendered as Markdown
-  - **`category`** *(optional)* — groups questions under a heading; defaults to **General**
-  - **`order`** *(optional)* — controls sort order within a category; lower numbers appear first
+  - **`question`** (required): question text, shown as plain text
+  - **`answer`** (required): answer text, parsed as Markdown
+  - **`category`** (optional): heading for a group of questions. Defaults to **General**
+  - **`order`** (optional): position within a category. Lower numbers appear first
 
   See [Writing FAQ Entries](/docs/writing-faqs) for the full field reference and a complete example file.

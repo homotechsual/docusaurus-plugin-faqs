@@ -11,4 +11,4 @@ answer: |
   order: 1
   ```
 
-  Entries without an explicit `order` come after all ordered entries and are sorted alphabetically by question. See [Writing FAQ Entries](/docs/writing-faqs) for the full sorting rules.
+  Entries without `order` follow the ordered entries and are sorted alphabetically by question. See [Writing FAQ Entries](/docs/writing-faqs) for sorting details.

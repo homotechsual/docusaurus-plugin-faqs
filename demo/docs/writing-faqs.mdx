@@ -21,10 +21,10 @@ order: 1
 
 | Field | Type | Required | Description |
 | ----- | ---- | -------- | ----------- |
-| `question` | `string` | Yes | The question text, rendered as plain text |
-| `answer` | `string` | Yes | The answer, rendered as Markdown (CommonMark via [marked](https://github.com/markedjs/marked)) |
-| `category` | `string` | No | Groups related questions under a heading. Entries without a category appear under **General** and are sorted last |
-| `order` | `number` | No | Controls sort order within a category — lower numbers appear first. Entries without an explicit order are sorted alphabetically by question, after any explicitly ordered entries |
+| `question` | `string` | Yes | The question text, shown as plain text |
+| `answer` | `string` | Yes | The answer, parsed as Markdown by [marked](https://github.com/markedjs/marked) |
+| `category` | `string` | No | Groups questions under a heading. Entries without a category appear under **General** and are sorted last |
+| `order` | `number` | No | Sorts entries within a category. Lower numbers appear first. Entries without an order follow ordered entries and are sorted alphabetically by question |
 
 ## Sorting behaviour
 
@@ -35,4 +35,4 @@ order: 1
 
 ## Skip behaviour
 
-Files that fail YAML parsing, or that are missing a string `question` or `answer` field, are skipped with a warning printed to the console at build time. The build continues — invalid files do not cause a build failure.
+Files with invalid YAML or without string `question` and `answer` fields are skipped. The plugin prints a warning during the build and continues.

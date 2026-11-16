@@ -2,7 +2,7 @@ question: Where do I put my FAQ files?
 category: Getting Started
 order: 3
 answer: |
-  By default the plugin reads `*.yaml` and `*.yml` files from `data/faqs/` relative to your site directory. You can change this with the `path` option:
+  By default, the plugin reads `*.yaml` and `*.yml` files from `data/faqs/` in your site directory. Set the `path` option to use a different directory:
 
   ```ts
   [faqsPlugin, { path: 'content/faqs' }]

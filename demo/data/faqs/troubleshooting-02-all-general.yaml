@@ -1,8 +1,8 @@
-question: All my questions appear under "General" — what's wrong?
+question: Why do all my questions appear under "General"?
 category: Troubleshooting
 order: 2
 answer: |
-  This happens when the `category` field is missing or not a string. Common causes:
+  The plugin uses **General** when `category` is missing or isn't a string. Check for these common mistakes:
 
   - The field is named `categories` (plural) instead of `category`
   - The value is a number or list rather than a plain string
