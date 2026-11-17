@@ -6,6 +6,7 @@ import faqsPlugin from '../lib/index.js'
 import type { PluginOptions as FAQOptions } from '../lib/types.js'
 import plausiblePlugin, { type PluginOptions as PlausibleOptions } from '@homotechsual/docusaurus-plugin-plausible'
 import npm2yarn from '@docusaurus/remark-plugin-npm2yarn'
+import { renderPage } from './imageRenderers.js'
 
 const config: Config = {
   title: 'FAQs for Docusaurus',
@@ -20,6 +21,16 @@ const config: Config = {
     locales: ['en'],
   },
   plugins: [
+    [
+      '@homotechsual/docusaurus-og',
+      {
+        path: 'og-images',
+        imageRenderers: {
+          'docusaurus-plugin-content-docs': renderPage,
+          'docusaurus-plugin-content-pages': renderPage,
+        },
+      },
+    ],
     [
       faqsPlugin,
       {

@@ -37,6 +37,14 @@ export default {
 
 For all configuration options, writing FAQ entries, direct links, and i18n support, see the [docs](https://faqs.docusaurus.homotechsual.dev).
 
+## Demo site integrations
+
+The demo homepage displays the package version and links to the current release.
+Its production build generates OpenGraph images for documentation and pages using
+`@homotechsual/docusaurus-og` and locally installed Inter fonts. Plausible tracking
+is configured for `faqs.docusaurus.homotechsual.dev`; these integrations are
+demo-only and are not enabled automatically for plugin consumers.
+
 ## Licence
 
 Apache-2.0
