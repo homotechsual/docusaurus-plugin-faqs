@@ -9,6 +9,7 @@
     "clear": "docusaurus clear"
   },
   "dependencies": {
+    "@docsense/indexer": "0.1.0",
     "@docusaurus/core": "^3.10.1",
     "@docusaurus/preset-classic": "^3.10.1",
     "@docusaurus/remark-plugin-npm2yarn": "^3.10.1",
@@ -16,6 +17,8 @@
     "@homotechsual/docusaurus-og": "^1.0.2",
     "@homotechsual/docusaurus-plugin-faqs": "workspace:*",
     "@homotechsual/docusaurus-plugin-plausible": "^1.1.1",
+    "cheerio": "^1.2.0",
+    "docusaurus-plugin-docsense": "0.1.0",
     "react": "^19.2.7",
     "react-dom": "^19.2.7"
   },
